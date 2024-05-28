@@ -5,12 +5,12 @@ st.subheader('uploading the CSV file')
 df=st.file_uploader('upload the csv file : ',type=['csv','xlsx'])
 
 st.subheader('Loading the CSV File')
-df=pd.read_csv(r"C:\Users\91991\OneDrive\files\Documents\GFG\python\Streamlit\Products.csv")
+df=pd.read_csv(Products.csv")
 if df is not None:
     st.table(df.head())
 
 st.subheader('loading image directly')
-st.image(r"C:\Users\91991\OneDrive\files\Documents\GFG\python\Streamlit\img.png")
+st.image(img.png")
 st.subheader('Working with Images')
 img_file = st.file_uploader("Upload the Image file : ", type = ['png', 'jpeg'])
 if img_file is not None:
